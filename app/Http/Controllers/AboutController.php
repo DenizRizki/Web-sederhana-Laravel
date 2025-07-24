@@ -11,11 +11,48 @@ class AboutController extends Controller
      */
     public function index()
     {
-         return view('about',
+        $siswas = [
         [
-            'tittle' => 'About-Laravel',
-            'about' => 'Laravel merupakan web framework PHP yang menggunakan konsep mvc (Model-view-controller) yang membuat pembuatan web menjadi lebih mudah, dan cepat'
-        ]);
+            'nama' => 'Deniz',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Rangga',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Rafa',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Raihan',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Yusuf',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Sattar',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Devano',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Bimasena',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Hadi',
+            'kelas' => 'IX-3'
+        ],
+    ];
+    return view('about',
+    [
+        'tittle' => 'Daftar Laravel',
+    ], compact('siswas'));
     }
 
     /**

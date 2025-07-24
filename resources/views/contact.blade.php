@@ -32,7 +32,7 @@
         <nav class="col-md-3 col-lg-2 sidebar d-flex flex-column">
             <h4 class="text-white text-center py-3">Menu</h4>
             <a href="home">Home</a>
-            <a href="about">About</a>
+            <a href="about">Daftar lengkap</a>
             <a href="contact">Contact</a>
         </nav>
 

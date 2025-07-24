@@ -11,19 +11,25 @@ class homeController extends Controller
      */
     public function index()
     {
-        return view('welcome',
-    
-    
-    
-    
-    
+       $siswas = [
+        [
+            'nama' => 'Deniz',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Rangga',
+            'kelas' => 'IX-3'
+        ],
+         [
+            'nama' => 'Rafa',
+            'kelas' => 'IX-3'
+        ],
+    ];
+    return view('welcome',
     [
-          'tittle' => 'Home-Laravel',
-        'nama' => 'Deniz Rizki Attila',
-         'kelas' => 'XI-3',
-    ]);
+        'tittle' => 'Home Laravel',
+    ], compact('siswas'));
     }
-
     /**
      * Show the form for creating a new resource.
      */

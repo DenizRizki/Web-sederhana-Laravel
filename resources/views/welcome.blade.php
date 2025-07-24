@@ -32,15 +32,28 @@
         <nav class="col-md-3 col-lg-2 sidebar d-flex flex-column">
             <h4 class="text-white text-center py-3">Menu</h4>
             <a href="home">Home</a>
-            <a href="about">About</a>
+            <a href="about">Daftar lengkap</a>
             <a href="contact">Contact</a>
         </nav>
 
         <main class="col-md-9 col-lg-10 p-4">
             <div class="container">
-                <h1 class="mb-4">Welcome To Laravel</h1>
-                <h2>Nama : {{ $nama }}</h2>
-                <h2>Kelas : {{ $kelas }}</h2>
+                <h1 class="mb-4">Daftar nama siswa baru SMK INFORMATIKA PESAT</h1>
+          
+<table>
+    <tr>
+        <th>NAMA</th>
+        <th>KELAS</th>
+    </tr>
+            <tr>
+                @foreach ($siswas as $siswa)
+                <tr>
+                 <td>{{ $siswa['nama'] }}</td>
+                  <td>{{ $siswa['kelas'] }}</td>
+                </tr>
+                @endforeach
+            </tr>
+</table>
             </div>
         </main>
     </div>
